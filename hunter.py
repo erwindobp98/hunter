@@ -26,7 +26,7 @@ WEB3_CHAINS = {name: Web3(Web3.HTTPProvider(url)) for name, url in RPC_ENDPOINTS
 # Karakter hex untuk generator PK
 HEX_CHARS = "0123456789abcdef"
 
-def loading_animation(text, duration=0.5):
+def loading_animation(text, duration=2):
     """Animasi loading singkat"""
     animation = ["|", "/", "-", "\\"]
     end_time = time.time() + duration
@@ -35,7 +35,7 @@ def loading_animation(text, duration=0.5):
         sys.stdout.write(f"\r{Fore.CYAN}{text} {animation[i % len(animation)]}")
         sys.stdout.flush()
         i += 1
-        time.sleep(0.5)
+        time.sleep(2)
     sys.stdout.write("\r" + " " * (len(text) + 4) + "\r")
 
 def random_private_key():
