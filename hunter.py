@@ -13,13 +13,21 @@ init(autoreset=True)
 
 # Daftar RPC untuk multi-chain
 RPC_ENDPOINTS = {
-    "Ethereum": "https://opt-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
-    "BNB Chain": "https://bnb-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Ethereum": "https://eth-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Base": "https://base-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Optimism": "https://opt-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "arbitrum": "https://arb-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Unichain": "https://unichain-sepolia.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Soneium": "https://soneium-minato.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "zeta": "https://zetachain-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Zora": "https://zora-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Blast": "https://blast-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Hayperliquid": "https://hyperliquid-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
+    "Bsc": "https://bnb-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
     "Polygon": "https://polygon-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
     "Avalanche": "https://avax-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
-    "Hayperliquid": "https://hyperliquid-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ"
+    "": ""
 }
-
 # Simpan Web3 untuk tiap chain
 WEB3_CHAINS = {name: Web3(Web3.HTTPProvider(url)) for name, url in RPC_ENDPOINTS.items()}
 
