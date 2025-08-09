@@ -25,8 +25,7 @@ RPC_ENDPOINTS = {
     "Hayperliquid": "https://hyperliquid-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
     "Bsc": "https://bnb-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
     "Polygon": "https://polygon-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
-    "Avalanche": "https://avax-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ",
-    "": ""
+    "Avalanche": "https://avax-mainnet.g.alchemy.com/v2/SiRDe2sBrBR3f2vm3cbhNSYpqwnk5LwJ"
 }
 # Simpan Web3 untuk tiap chain
 WEB3_CHAINS = {name: Web3(Web3.HTTPProvider(url)) for name, url in RPC_ENDPOINTS.items()}
