@@ -48,13 +48,6 @@ def get_terminal_width():
 def create_matrix_banner():
     """Banner Matrix style"""
     banner = f"""
-{Fore.GREEN}╔══════════════════════════════════════════════════════════════════════════════════════╗
-║  {Fore.LIGHTGREEN_EX}███╗   ███╗ █████╗ ████████╗██████╗ ██╗██╗  ██╗    ██╗  ██╗██╗   ██╗███╗   ██╗████████╗{Fore.GREEN}  ║
-║  {Fore.LIGHTGREEN_EX}████╗ ████║██╔══██╗╚══██╔══╝██╔══██╗██║╚██╗██╔╝    ██║  ██║██║   ██║████╗  ██║╚══██╔══╝{Fore.GREEN}  ║  
-║  {Fore.LIGHTGREEN_EX}██╔████╔██║███████║   ██║   ██████╔╝██║ ╚███╔╝     ███████║██║   ██║██╔██╗ ██║   ██║{Fore.GREEN}     ║
-║  {Fore.LIGHTGREEN_EX}██║╚██╔╝██║██╔══██║   ██║   ██╔══██╗██║ ██╔██╗     ██╔══██║██║   ██║██║╚██╗██║   ██║{Fore.GREEN}     ║
-║  {Fore.LIGHTGREEN_EX}██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║██║██╔╝ ██╗    ██║  ██║╚██████╔╝██║ ╚████║   ██║{Fore.GREEN}     ║
-║  {Fore.LIGHTGREEN_EX}╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝{Fore.GREEN}     ║
 ╠══════════════════════════════════════════════════════════════════════════════════════╣
 ║  {Fore.CYAN}EVM PRIVATE KEY HUNTER v2.0 - MULTI CHAIN MATRIX SCANNER{Fore.GREEN}                      ║
 ║  {Fore.YELLOW}Active Chains: {len(RPC_ENDPOINTS)} Networks{Fore.GREEN}                                                    ║
